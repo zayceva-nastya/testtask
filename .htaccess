@@ -4,11 +4,7 @@ RewriteRule ^.*$ /public/$0 [QSA,L]
 #
 # HTID:18805518: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
 php_value display_errors 1
-# RewriteEngine On
-# RewriteCond %{HTTPS} !on
-# RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L] 
-# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:18805518:
-# index file can be index.php, home.php, default.php etc.
+
 DirectoryIndex index.php
 
 # Rewrite engine
@@ -21,6 +17,6 @@ RewriteCond $1 !^(index\.php|robots\.txt|favicon\.ico)
 # RewriteRule ^(.*)$ ./index.php/$1 [L,QSA]
 RewriteRule ^(.*)$ ./index.php/$1 [L,QSA]
 
-# php_flag output_buffering on
+php_flag output_buffering on
 RewriteBase /
-# LoadModule rewrite_module modules/mod_rewrite.so
+
