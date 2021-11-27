@@ -1,0 +1,165 @@
+$font:'Times New Roman', Times, serif ;
+
+body{
+   padding:2% 10%;
+}
+#main{
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+.topBlock{
+    margin-bottom:1% ;
+    width: 100%;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 1%;
+
+
+
+    
+}
+
+
+
+.typeSwitcher{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.namePage{
+    font-family: $font;
+    font-size: 5vh;
+    font-weight: bold;
+    width: 80%;
+}
+label{
+    width: 100%!important;
+}
+label, .pageAdd{
+   
+   text-align: left;
+   margin: 1% 0!important;
+    font-family: $font;
+    font-size: 1rem;
+    font-weight: bolder;
+    display: block;
+}
+
+#mainF label:first-child input,#addForm label:first-child input{
+    margin-left: 11.8%;
+}
+#mainF label:nth-child(2) input,#addForm label:nth-child(2) input{
+    margin-left: 11.5%;
+}
+#mainF label:nth-child(3) input,#addForm label:nth-child(3) input{
+    margin-left: 11.9%;
+}
+#mainF label:nth-child(4) input,#addForm label:nth-child(4) input{
+    margin-left: 8.8%;
+}
+#mainF label:nth-child(5) input,#addForm label:nth-child(5) input{
+    margin-left: 9.1%;
+}
+#mainF label:nth-child(6) input,#addForm label:nth-child(6) input{
+    margin-left: 7.5%;
+}
+#demens label:nth-child(2) input,#demens label:nth-child(2) input{
+    margin-left: 9.1%!important;
+}
+#demens label:nth-child(3) input,#demens label:nth-child(3) input{
+    margin-left: 9.2%;
+}
+
+#mainF input[type='text'],#addForm input[type='text']{
+    border: 2px solid black;
+}
+
+select {
+    margin-left: 8.5vw;
+    width: 11.5vw;
+    border: 2px solid black;
+    
+}
+
+.hidden{
+    display:none;
+    // opacity: 0;
+    // visibility: hidden;
+
+}
+
+
+.allproducts{
+    
+    margin: 2%;
+    padding: auto;
+    display: grid;
+    grid-template-rows: 2fr 2fr 2fr 2fr;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-gap: 1vw;
+
+}
+
+.product{
+    border: solid 2px black;
+    padding: 2% 5% 5% 2%;
+ 
+}
+.product p:last-child{
+    margin-left: 30%;
+  }
+  .product p:nth-child(2){
+    margin-left: 35%;
+  }
+  .product p:nth-child(3){
+    margin-left:30%;
+  }
+  .product p:nth-child(3){
+    margin-left:38%;
+  
+  }
+  .product p:nth-child(4){
+    margin-left: 37%;
+  }
+  
+ 
+p {
+    height: 6vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    font-size: 1rem;;
+    margin-top: 5px ;
+    }
+        
+ 
+
+
+a{
+ margin-right: 1%;
+}
+
+.btn ,a{
+  margin-top: 1%;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ text-align:center ;
+ font-size: 1rem !important;
+ text-decoration: none;
+ border: 1px solid black;
+ padding: 2px 3px !important;
+ border-radius: 3px;
+ background-color: rgb(210, 222, 223);
+ color:black;
+ box-shadow: 2px 5px;
+ height: 90% !important;
+}   
+
+.error,h1{
+    color: red;
+}
+#footer{
+    width: 100%;
+    text-align: center;
+}
