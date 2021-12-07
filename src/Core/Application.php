@@ -1,10 +1,7 @@
 <?php
 namespace Core;
 
-// use App\Framework\ApplicationInterface;
-// use App\Framework\Routing\RouterInterface;
-// use App\MVC\Controller\CodController;
-// use Model\Repository\RepositoryInterface;
+
 use view\Plain;
 
 class Application 
