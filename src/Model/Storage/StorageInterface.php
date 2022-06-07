@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Model\Storage;
 
 interface StorageInterface
@@ -10,7 +12,5 @@ interface StorageInterface
     public function delete(string $table, array $id): int;
 
     public function insert(string $table, array $row): int;
-
- 
   
 }
