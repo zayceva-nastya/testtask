@@ -1,12 +1,10 @@
 <?php
 
 declare(strict_types=1);
+
 session_start();
 
-
-
 require_once '../src/autoload.php';
-
 
 use  Core\Application ;
 
