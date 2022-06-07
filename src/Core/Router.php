@@ -1,7 +1,8 @@
 <?php
 
-namespace Core;
+declare(strict_types=1);
 
+namespace Core;
 
 class Router 
 {
@@ -10,13 +11,9 @@ class Router
     public function add(string $method, string $path, array $data): self
     {
         $method = strtolower($method);
-
-
         $this->routes[$method][$path] = $data;
-
         return $this;
     }
-
 
     public function dispatch(string $method, string $path): ?array
     {
