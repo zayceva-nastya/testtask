@@ -120,7 +120,6 @@ jQuery(function ($) {
             document.getElementById(elements[lastIndex]).classList.toggle('hidden')
                     let index = $("#productType option:selected").index();
                     document.getElementById(elements[index]).classList.toggle('hidden')
-            console.log(elements);   
             lastIndex=index;
         })
     }
