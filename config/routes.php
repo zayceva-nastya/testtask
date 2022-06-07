@@ -1,8 +1,8 @@
-
 <?php
 
-$router = new Core\Router();
+declare(strict_types=1);
 
+$router = new Core\Router();
 
 $router->add(
     'GET',
@@ -13,7 +13,6 @@ $router->add(
     ]
 );
 
-
 $router->add(
     'post',
     '/add',
@@ -21,7 +20,6 @@ $router->add(
     [
         'controller' => Controller\ProductController::class,
         'action' => 'add',
-
     ]
 
     );
@@ -43,6 +41,5 @@ $router->add(
         'controller' => Controller\ProductController::class,
         'action' => 'showAdd'
     ]);
-
 
 return $router;
