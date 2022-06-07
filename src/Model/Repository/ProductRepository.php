@@ -1,23 +1,19 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Model\Repository;
 
 use Model\Storage\StorageInterface;
 use Model\Product;
 
-
-
 class ProductRepository 
-
 {
     private $storage;
     private $table;
 
-
-    public function __construct(StorageInterface $storage,  $table)
-    
+    public function __construct(StorageInterface $storage,  $table)  
     {
-
         $this->storage = $storage;
         $this->table = $table;
     }
@@ -42,10 +38,8 @@ class ProductRepository
             }
                     
         }
-
         return $products;
     }
-
   
     public function create($row): object
     {
@@ -61,7 +55,6 @@ class ProductRepository
             ->setLength($row['length_furniture'])
             ->setWidth($row['width_furniture'])
             ->setHeight($row['height_furniture']);
-
 
         return $product;
     }
@@ -97,9 +90,4 @@ class ProductRepository
     {
         return (bool)$this->storage->delete($this->table, $id);
     }
-
-    
-    
-  
-
 }
