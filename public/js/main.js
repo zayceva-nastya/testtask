@@ -112,17 +112,14 @@ jQuery(function ($) {
     })
 
 
-    
-    function kk() {
-      let elements = ['hidden','boxDvd','boxBook','demens'];
-    let lastIndex =0; 
-        document.querySelector('#productType').addEventListener('change', function () {
-            document.getElementById(elements[lastIndex]).classList.toggle('hidden')
-                    let index = $("#productType option:selected").index();
-                    document.getElementById(elements[index]).classList.toggle('hidden')
-            lastIndex=index;
-        })
-    }
-    
+  let select = document.getElementById('productType');
+    let block = document.querySelectorAll('.block');
+    let lastIndex = 0;
+    select.addEventListener('change', function() {
+        block[lastIndex].classList.toggle('hidden');
+        let index = select.selectedIndex;
+        block[index].classList.toggle('hidden');
+        lastIndex = index;
+    });
 
 
