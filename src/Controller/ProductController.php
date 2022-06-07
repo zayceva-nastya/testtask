@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Controller;
 
 use View\Plain;
@@ -16,9 +18,6 @@ protected $tableName='`product`';
         parent::__construct($view);
 
     }
-
-
-
 
     public function actionAdd()
     {
@@ -44,7 +43,4 @@ protected $tableName='`product`';
     
         }
     }
-
-
-
 }
