@@ -1,6 +1,8 @@
 <?php
-namespace Core;
 
+declare(strict_types=1);
+
+namespace Core;
 
 use view\Plain;
 
@@ -13,18 +15,14 @@ class Application
     {
         $pathToConfig = $_SERVER['DOCUMENT_ROOT'] . '/config/storage.php';
         require "$pathToConfig";
-
         $this->view = new Plain($_SERVER['DOCUMENT_ROOT'] . dirname($_SERVER['SCRIPT_NAME']) . '/../templates');
-
         $this->view->setLayout('default');
    
     }
-
   
     public function setRouter( $router)
     {
         $this->router = $router;
-
         return $this;
     }
 
