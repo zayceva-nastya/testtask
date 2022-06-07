@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Controller;
 
 use View\Plain;
@@ -18,7 +20,6 @@ abstract class DefaultController
         $this->repository = new ProductRepository(new PdoDb(DSN, USER_NAME, PASSWORD),$this->tableName); 
 
     }
-
 
     protected function redirect(string $location)
     {
@@ -39,22 +40,15 @@ abstract class DefaultController
         );
     }
 
-
     public function actionAdd()
-    {
-       
-        
+    {     
          $this->repository->create($data);
-         $this->redirect('/');
-    
-        
+         $this->redirect('/');  
     }
 
     public function actionDel()
     {
-        
-        $this->repository->delete($_POST['id']);
-    
+        $this->repository->delete($_POST['id']);   
     }
 
     public function actionShowAdd(){
@@ -63,8 +57,6 @@ abstract class DefaultController
          ->render(
              '/add',
              []);
-         
+        
      }
-
-
 }
